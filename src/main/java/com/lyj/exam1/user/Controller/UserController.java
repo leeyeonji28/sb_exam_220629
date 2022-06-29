@@ -1,4 +1,4 @@
-package com.lyj.exam1;
+package com.lyj.exam1.user.Controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -10,6 +10,12 @@ public class UserController { // 브라우저의 요청에 반응
     @RequestMapping("/users")
     @ResponseBody
     public String users(){
-        return "HI";
+        return "users";
+    }
+
+    @RequestMapping("1")
+    @ResponseBody
+    public String user(){
+        return "user";
     }
 }
